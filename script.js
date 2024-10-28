@@ -1,9 +1,9 @@
-// Define a saudação personalizada com o nome do dispositivo
-document.addEventListener("DOMContentLoaded", () => {
-    const userName = navigator.userAgent.includes("Windows") ? "Usuário Windows" : 
-                     navigator.userAgent.includes("Mac") ? "Usuário Mac" :
-                     navigator.userAgent.includes("Linux") ? "Usuário Linux" : "Visitante";
-    document.getElementById("userName").textContent = userName;
+
+    // Solicita o nome do usuário
+    const userName = prompt("Por favor, insira seu nome:");
+    if (userName) {
+        document.getElementById("userName").textContent = userName.split(" ")[0]; // Mostra apenas o primeiro nome
+    }
 });
 
 // Função para abrir PDF em uma nova aba
