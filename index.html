@@ -1,26 +1,41 @@
-<!DOCTYPE html>
+
+  <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visualizador de PDFs</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca Virtual</title>
+
     <link rel="shortcut icon" type="imagex/png" href="./icon.png">
-    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Olá, <span id="userName">Visitante</span>!</h1>
-        <h2>Aqui, esta todos os arquivos do nosso trabalho!</h2>
+  <div class="container">
+    <h1 id="saudacao"></h1>
+    <div class="pdf-container">
+      <h2>Arquivos PDF</h2>
 
-        <div class="pdf-links">
-            <button onclick="openPDF('Dissertação Bruna Camilo - Versão Final encadernada.pdf')">Dissertação Bruna Camilo</button>
-            <button onclick="openPDF('criacao-patriarcado.pdf')">Gerda Lerner - A Criação do Patriarcado</button>
-            <button onclick="openPDF('del-priore-histc3b3ria-das-mulheres-no-brasil.pdf')">Mary Del Priore - História das Mulheres no Brasil</button>
-        </div>
+      <!-- Botões para abrir PDFs em tela cheia -->
+      <div class="pdf-button">
+        <button onclick="abrirPDF('criacao-patriarcado.pdf')">Gerda Lerner - A Criação do Patriarcado</button>
+      </div>
+      <div class="pdf-button">
+        <button onclick="abrirPDF('del-priore-historia-das-mulheres-no-brasil.pdf')">Mary Del Priore - História das Mulheres no Brasil</button>
+      </div>
+      <div class="pdf-button">
+        <button onclick="abrirPDF('dissertacao-bruna-camilo.pdf')">Bruna Camilo - Patriarcado e Teoria Política Feminista</button>
+      </div>
 
-        <a href="https://www.nucleodoconhecimento.com.br/psicologia/consolidacao-do-patriarcado" target="_blank" class="article-link">Acessar Artigo Científico</a>
+      <!-- Link para o artigo científico -->
+      <div class="article-link">
+        <h3>Artigo Científico</h3>
+        <p><a href="https://www.nucleodoconhecimento.com.br/psicologia/consolidacao-do-patriarcado" target="_blank">
+          Consolidação do Patriarcado - Letícia Ésther de Andrade
+        </a></p>
+      </div>
     </div>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
