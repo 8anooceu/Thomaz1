@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
         : navigator.userAgent.includes("Linux") ? "Usuário Linux" 
         : "Visitante"; document.getElementById("userName").textContent = userName;
 
+    
 // Função para abrir PDF em uma nova aba
 function openPDF(filePath) {
     const newTab = window.open();
