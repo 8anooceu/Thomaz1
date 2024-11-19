@@ -3,7 +3,7 @@ window.addEventListener("load", () => {
     loadingScreen.style.opacity = "0";
     setTimeout(() => {
         loadingScreen.style.display = "none";
-    }, 500); // Aguarda a transição para ocultar a tela
+    }, 5000); // Aguarda a transição para ocultar a tela
 });
 // Define a saudação personalizada com o nome do dispositivo
 document.addEventListener("DOMContentLoaded", () => {
