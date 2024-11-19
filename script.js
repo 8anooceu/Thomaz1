@@ -1,3 +1,10 @@
+window.addEventListener("load", () => {
+    const loadingScreen = document.getElementById("loading-screen");
+    loadingScreen.style.opacity = "0";
+    setTimeout(() => {
+        loadingScreen.style.display = "none";
+    }, 500); // Aguarda a transição para ocultar a tela
+});
 // Define a saudação personalizada com o nome do dispositivo
 document.addEventListener("DOMContentLoaded", () => {
     const userName = navigator.userAgent.includes("Windows") ? "Usuário Windows" : 
